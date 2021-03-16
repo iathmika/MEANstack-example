@@ -53,7 +53,7 @@ router.post('/', function(req, res, next) {
 
 			});
 		}else{
-			res.send({"Success":"password is not matched"});
+			res.send({"Success":"Passwords do not mach"});
 		}
 	}
 });
@@ -135,7 +135,7 @@ router.post('/forgetpass', function (req, res, next) {
 					res.send({"Success":"Password changed!"});
 			});
 		}else{
-			res.send({"Success":"Password does not matched! Both Password should be same."});
+			res.send({"Success":"Passwords do not match! Both Password should be same."});
 		}
 		}
 	});
